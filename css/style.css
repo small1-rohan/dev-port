@@ -1,140 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+.primary-color {
+  color: #fd6e0a;
 }
-.primary-color{
-    color: #FD6E0A;
+
+nav,
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 200px 0;
 }
-nav, .banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 200px 0;
-}
+
 /* -----------------------------------COMMON CSS  ^ --------------------------------------------- */
 
-header{
-    background-color: #FFF8F3;
-    background-image: url(../images/header_bg.png), url(../images/developer.png);
-    background-repeat: no-repeat;
-    background-position: bottom right, left;
+header {
+  background-color: #fff8f3;
+  background-image: url(../images/header_bg.png), url(../images/developer.png);
+  background-repeat: no-repeat;
+  background-position: bottom right, left;
 }
 
 /* ============================nav ======================================= */
 
-
-nav h2{
-    font-weight: 800 ;
-    font-size: 45px;
-
-
-
+nav h2 {
+  font-weight: 800;
+  font-size: 45px;
 }
-nav ul{
-    display: flex;   
-    align-items: center;                                                                                                                                                                                                       
+
+nav ul {
+  display: flex;
+  align-items: center;
 }
-nav li{
-    list-style: none;
-    margin: 0 0 0 50px;
-    font-size: 20px ;
-    font-weight: 400;
-    line-height: 27px;
-    color: #474747;
 
-
+nav li {
+  list-style: none;
+  margin: 0 0 0 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #474747;
 }
-nav button, .banner button{
-    padding: 10px 30px;
-    background-color: #FD6E0A;
-    color: white;
-    border: none;
-    border-radius: 5px;
 
+nav button:hover,
+.banner button:hover {
+    background-color: transparent;
+    color: #fd6e0a;
+    border: 2px solid #fd6e0a;
+}
+
+nav button,
+.banner button {
+  padding: 10px 30px;
+  background-color: #fd6e0a;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  transition: .55s;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /* =======================================banner=================================== */
 
-.banner h3{
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 61px;
-}
-.banner h1{
-    font-weight: 700;
-font-size: 85px;
-line-height: 116px;
+.banner h3 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 61px;
 }
 
-.banner button{
-    margin: 30px 0 0 0;
+.banner h1 {
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 116px;
+}
+
+.banner button {
+  margin: 40px 10px 0;
 }
 
 /* ===============================main=================================================== */
 
-main{
-    max-width: 1300px;
-    margin: 0 auto;
+main {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.about{
-    margin: 200px 0;
-    padding: 130px 150px;
-    background-color: #FFF8F3;
-    text-align: center;
+.about {
+  margin: 200px 0;
+  padding: 130px 150px;
+  background-color: #fff8f3;
+  text-align: center;
 }
 
-.about h3{
-    
-font-weight: 700;
-font-size: 35px;
-line-height: 48px;
-margin: 0 0 30px 0;
-}
-.about p{
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+.about h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 48px;
+  margin: 0 0 30px 0;
 }
 
-.about-detail{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 30px 0;
-
+.about p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-
-.about-detail .title{
-    
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-/* or 150% */
-
-text-align: center;
-
-/* Dark 03 */
-
-color: #757575;
-
+.about-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 30px 0;
 }
-.about-detail .value{
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    /* or 150% */
-    
-    text-align: center;
-    
-    /* Dark 02 */
-    
-    color: #474747;
+.about-detail .title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+  text-align: center;
+
+  /* Dark 03 */
+
+  color: #757575;
+}
+
+.about-detail .value {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+  text-align: center;
+
+  /* Dark 02 */
+
+  color: #474747;
 }
