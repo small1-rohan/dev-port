@@ -55,16 +55,12 @@ nav li {
   line-height: 27px;
   color: #474747;
 }
-
-nav button:hover,
-.banner button:hover {
+button:hover {
   background-color: transparent;
   color: #fd6e0a;
   border: 2px solid #fd6e0a;
 }
-
-nav button,
-.banner button {
+button {
   padding: 10px 30px;
   background-color: #fd6e0a;
   color: white;
@@ -166,7 +162,7 @@ main {
   justify-content: space-between;
 }
 
-.skill {
+.what_to_do .skill {
   text-align: left;
   width: 22%;
   padding: 25px;
@@ -176,12 +172,58 @@ main {
   border-radius: 10px;
   transition: 0.44s;
 }
-.skill:hover {
+.what_to_do .skill:hover {
   box-shadow: 2px 2px 23px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 2px 2px 23px -3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 2px 2px 23px -3px rgba(0, 0, 0, 0.6);
 }
+.summary h2 {
+  text-align: center;
+  margin: 150px 0 100px;
+}
 
-h4 {
+.summary .sum_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+
+  color: #474747;
+}
+
+.summary h4 {
   margin: 18px 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: #474747;
+}
+.summary .sum_itm {
+  width: 48%;
+}
+.summary h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #757575;
+}
+
+.summary p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 30px 0;
+  width: 90%;
+  color: #757575;
+}
+
+.summary button {
+  margin: 45px 0;
+  margin-left: 50%;
+  transform: translatex(-50%);
 }
