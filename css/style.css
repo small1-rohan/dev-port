@@ -55,17 +55,19 @@ nav li {
   line-height: 27px;
   color: #474747;
 }
-button:hover {
+button:hover,
+.inp:hover {
   background-color: transparent;
   color: #fd6e0a;
   border: 2px solid #fd6e0a;
 }
-button {
+button,
+.inp {
   padding: 10px 30px;
   background-color: #fd6e0a;
   color: white;
   border: none;
-  border-radius: 9px;
+  border-radius: 10px;
   border: 2px solid transparent;
   transition: 0.55s;
   font-weight: 600;
@@ -153,6 +155,9 @@ main {
   line-height: 30px;
   margin-top: 110px;
 }
+.skills h4 {
+  padding: 30px 0;
+}
 
 .what_to_do .text p {
   padding: 40px 150px;
@@ -209,7 +214,6 @@ main {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-
   color: #757575;
 }
 
@@ -226,4 +230,50 @@ main {
   margin: 45px 0;
   margin-left: 50%;
   transform: translatex(-50%);
+}
+/* ==============================footer============================================= */
+
+footer {
+  background-color: #fff8f3;
+  padding: 150px 320px;
+  display: flex;
+}
+
+footer p {
+  width: 50%;
+  margin: 38px 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #474747;
+}
+
+footer ul {
+  display: flex;
+}
+footer .right {
+}
+
+footer li {
+  list-style: none;
+  margin-right: 17px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+footer input {
+  margin: 20px 10px 18px 0;
+  border: none;
+  padding: 20px 33px;
+  padding-right: 90px;
+  height: 64px;
+}
+
+footer textarea {
+  border: 0;
+  padding-left: 30px;
+  padding-top: 30px;
 }
